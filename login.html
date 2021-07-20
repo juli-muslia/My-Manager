@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <title>My Manager</title>
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap core CSS -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--external css-->
+  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+  <style>
+     .hide{
+        display: none;
+        }
+  </style>
+</head>
+
+<body>
+  <!-- **********************************************************************************************************************************************************
+      MAIN CONTENT
+      *********************************************************************************************************************************************************** -->
+<div id="app">
+   <div class="container">
+    <div class="form-login">
+      
+        <h2 class="form-login-heading">MIRESEVINI !</h2>
+        <div class="login-wrap"> 
+              <div class="panel-heading">
+                <ul class="nav nav-tabs nav-justified">
+                  <li class="active">
+                    <a data-toggle="tab" href="#overview">HYR</a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" href="#edit">REGJISTROHU</a>
+                  </li>
+                 
+                </ul>
+              </div>
+
+
+<div class="panel-body">
+  <div class="tab-content">
+       <div id="overview" class="tab-pane active">
+          <input type="email" id="email" class="form-control" placeholder="Email" autofocus required>
+          <br>
+          <input type="password" id="password" class="form-control"  placeholder="Password" required>
+          <label class="checkbox">
+            <input type="checkbox" value="remember-me"> Me mbaj mend
+            <span class="pull-right">
+            <a data-toggle="modal" href="login.html#myModal"> Keni harruar fjalekalimin?</a>
+            </span>
+            </label>
+          <button id="btnLogin" class="btn btn-theme btn-block" ><i class="fa fa-lock"></i> Hyr</button>
+         
+         <button id="btnLogOut" class="btn btn-theme04 btn-block hide"><i class="fa fa-lock"></i> Dil</button> 
+          <hr>
+        </div>
+
+
+          
+
+       <div id="edit" class="tab-pane">
+         <input type="text" id="userName" class="form-control"  placeholder="Emri" required> 
+          <br>
+         <input type="text" id="userSname" class="form-control"  placeholder="Mbiemri" required> 
+         <br>
+         <input type="text" id="phone" class="form-control"  placeholder="Telefon/Celular" required>
+         <br>
+         <input type="email" id="emailregister" class="form-control" placeholder="Email" autofocus required>
+          <br>
+         <input type="password" id="passwordregister" class="form-control"  placeholder="Password" required>
+          <br>  
+        
+        <button id="btnSignUp" class="btn btn-theme04 btn-block" ><i class="fa fa-lock"></i> Krijo nje llogari te re!</button>
+        <button id="btnLogOut" class="btn btn-theme04 btn-block hide"><i class="fa fa-lock"></i> Dil</button> 
+          <hr> 
+       </div>
+
+
+          </div>
+        </div>
+      </div>
+</div>
+
+
+
+
+
+
+    <!--    <div id="app">
+        <input type="email" id="txtEmail" placeholder="Enter email" /> <br/>
+        <input type="password" id="txtPassword" placeholder="Enter password" /><br/>
+        <button id="btnLogin" >Log in</button>
+        <button id="btnSignUp" >Sign Up</button>
+        <button id="btnLogOut" class="hide" >Log Out</button>
+        <button id="withFB">Log In with FaceBook</button>
+        <button id="withGithub">Log In with GitHub</button>
+    </div> -->
+        <!-- Modal -->
+        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Keni harruar fjalekalimin ?</h4>
+              </div>
+              <div class="modal-body">
+                <p>Shkruani adresen tuaj te emailit qe te riktheni fjalekalimin tuaj.</p>
+                <input id="emailReset"type="text" name="email" placeholder="Email" autocomplete="off" class="form-control placeholder-no-fix">
+              </div>
+              <div class="modal-footer">
+                <button data-dismiss="modal" class="btn btn-default" type="button">Anullo</button>
+                <button id="resetpass"class="btn btn-theme" type="button">Dergo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- modal -->
+      </div>
+    </div>
+  </div>
+  <div id="results"></div>
+  <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+  <script src="firebasejs/signinup.js"></script>
+
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <!--BACKSTRETCH-->
+  <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
+  <script type="text/javascript" src="lib/jquery.backstretch.min.js"></script>
+  <script>
+    $.backstretch("img/login-bg.jpg", {
+      speed: 500
+    });
+  </script>
+</body>
+
+</html>

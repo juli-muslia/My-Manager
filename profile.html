@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Julian Muslia">
+  <title>My Manager</title>
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap core CSS -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--external css-->
+  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <section id="container">
+    <!-- **********************************************************************************************************************************************************
+        TOP BAR CONTENT & NOTIFICATIONS
+        *********************************************************************************************************************************************************** -->
+    <!--header start-->
+    <header class="header black-bg">
+      <div class="sidebar-toggle-box">
+        <div class="fa fa-bars tooltips" data-placement="right" data-original-title=""></div>
+      </div>
+      <!--logo start-->
+      <a href="main.html" class="logo"><b>MY MAN<span>AGER</span></b></a>
+      <!--logo end-->
+      <div class="nav notify-row" id="top_menu">
+    
+      </div>
+      <div class="top-menu">
+        <ul class="nav pull-right top-menu">
+          <li><button id="btnLogOut" class="logout" >Dil</button></li>
+        </ul>
+      </div>
+    </header>
+    <!--header end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+    <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered"><a href="profile.html"><img src="img/ui-sam.jpg" class="img-circle" width="80"></a></p>
+          <h5 class="centered">Julian Muslia</h5>
+<!--MENU -->
+
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-lock"></i>
+              <span>Fjalekalimet</span>
+              </a>
+            <ul class="sub">
+              <li><a href="pass_all.html">Shiko te gjitha</a></li>
+              <li><a href="pass_add.html">Regjistro fjalekalim te ri</a></li>
+              <li><a href="pass_edit.html">Ndrysho fjalekalimin</a></li>
+              <li><a href="pass_delete.html">Fshij fjalekalimin</a></li>
+            </ul>
+          </li>
+          
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-eye"></i>
+              <span>Dokumenta Identiteti</span>
+              </a>
+            <ul class="sub">
+              <li><a href="doc_all.html">Shiko te gjitha</a></li>
+              <li><a href="doc_add.html">Shto dokument te ri</a></li>
+              <li><a href="doc_edit.html">Ndrysho dokumentat</a></li>
+              <li><a href="doc_delete.html">Fshij dokumentat</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-credit-card"></i>
+              <span>Kartat Bankare</span>
+              </a>
+            <ul class="sub">
+              <li><a href="bank_all.html">Shiko te gjitha</a></li>
+              <li><a href="bank_add.html">Shto llogari te re banke</a></li>
+              <li><a href="bank_edit.html">Ndrysho llogari banke</a></li>
+              <li><a href="bank_delete.html">Fshij llogari banke</a></li>
+            </ul>
+          </li>
+          
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-file-text-o"></i>
+              <span>Shenime Personale</span>
+              </a>
+            <ul class="sub">
+              <li><a href="notes_all.html">Shiko te gjitha shenimet</a></li>
+              <li><a href="notes_add.html">Shto shenim te ri</a></li>
+              <li><a href="notes_edit.html">Ndrysho shenim</a></li>
+              <li><a href="notes_delete.html">Fshij shenim</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper site-min-height">
+        <div class="row mt">
+          <div class="col-lg-12">
+            <div class="row content-panel">
+
+              <div class="centered profile-text">
+                <div class="profile-pic">
+                  <p><img src="img/ui-sam.jpg" class="img-circle"></p>
+                  <h3 id="userName">Julian Muslia</h3>
+                </div>
+              </div>
+              <!-- /col-md-4 -->
+            </div>
+            <!-- /row -->
+          </div>
+          <!-- /col-lg-12 -->
+          <div class="col-lg-12 mt">
+            <div class="row content-panel">
+              <div class="panel-heading">
+                <ul class="nav nav-tabs nav-justified">
+                  <li class="active">
+                    <a data-toggle="tab" href="#edit">Ndrysho Profilin</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /panel-heading -->
+              <div class="panel-body">
+                <div class="tab-content">
+                  <div id="edit" class="tab-pane active">
+                    <div class="row">
+                      <div class="col-lg-8 col-lg-offset-2 detailed">
+                        <h4 class="mb">Informacion Personal</h4>
+                        <form role="form" class="form-horizontal">
+                          <div class="form-group">
+                            <label class="col-lg-2 control-label">Fotoja e profilit</label>
+                            <div class="col-lg-6">
+                              <input type="file" id="exampleInputFile" class="file-pos">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-lg-2 control-label">Emri</label>
+                            <div class="col-lg-6">
+                              <input type="text" placeholder=" " id="c-name" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-lg-2 control-label">Mbiemri</label>
+                            <div class="col-lg-6">
+                              <input type="text" placeholder=" " id="lives-in" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-lg-2 control-label">Telefon/Celular</label>
+                            <div class="col-lg-6">
+                              <input type="text" placeholder=" " id="country" class="form-control">
+                            </div>
+                          </div>
+                        
+                          </div>
+                        </form>
+                      </div>
+                      <!-- /col-lg-8 -->
+                    </div>
+                    <!-- /row -->
+                  </div>
+                  <!-- /tab-pane -->
+                </div>
+                <!-- /tab-content -->
+              </div>
+              <!-- /panel-body -->
+            </div>
+            <!-- /col-lg-12 -->
+          </div>
+          <!-- /row -->
+        </div>
+        <!-- /container -->
+      </section>
+      <!-- /wrapper -->
+    </section>
+    <!-- /MAIN CONTENT -->
+    <!--main content end-->
+    <!--footer start-->
+<footer class="site-footer">
+
+      <div class="text-center">
+        <div class="credits">
+        
+           <a href="http://julianmuslia.ml">Julian Muslia  &copy; 2019</a>
+        </div>
+        <a href="main.html#" class="go-top">
+          <i class="fa fa-angle-up"></i>
+          </a>
+      </div>
+    </footer>
+    <!--footer end-->
+  </section>  
+  <!--
+  ===============================================================================
+  ==============================FIREBASE FILES===================================
+  =============================================================================== -->
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>  
+  <script src="firebasejs/signedin.js"></script>
+
+
+  <!--
+  ===============================================================================
+  ============================END FIREBASE FILES=================================
+  =============================================================================== -->
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script class="include" type="text/javascript" src="lib/jquery.dcjqaccordion.2.7.js"></script>
+  <script src="lib/jquery.scrollTo.min.js"></script>
+  <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
+  <!--common script for all pages-->
+  <script src="lib/common-scripts.js"></script>
+  <!--script for this page-->
+  <!-- MAP SCRIPT - ALL CONFIGURATION IS PLACED HERE - VIEW OUR DOCUMENTATION FOR FURTHER INFORMATION -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+  <script>
+    $('.contact-map').click(function() {
+
+      //google map in tab click initialize
+      function initialize() {
+        var myLatlng = new google.maps.LatLng(40.6700, -73.9400);
+        var mapOptions = {
+          zoom: 11,
+          scrollwheel: false,
+          center: myLatlng,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'Dashio Admin Theme!'
+        });
+      }
+      google.maps.event.addDomListener(window, 'click', initialize);
+    });
+  </script>
+</body>
+
+</html>
